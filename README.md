@@ -5,7 +5,9 @@ This is the implementation of an idea I've seen in a [reddit](http://www.reddit.
 
 
 
-The example uses only 2 pins that have to be pressed in a certain order of 3 presses. After that an output will be activated (HIGH) for 1 second. 
+The example uses only 2 pins that have to be pressed in a certain order. Here it is pin 11, 13, 11  (to gnd). After that an output will be activated (HIGH) for 1 second. 
 If the process is interrupted for more then 5 seconds the sequence detector will be reset.
 
 This has been tested with an arduino UNO board. But it is a general solution that will work wit ESP8266 or ESP32 a.s.o.
+
+Extending to any available input ports or modify to use port extender should be very easy.
