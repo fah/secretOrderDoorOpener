@@ -1,6 +1,7 @@
+
 const int NUMBER_OF_PINS = 3;
 const int buttonOrder[NUMBER_OF_PINS] = {11, 13, 11}; // order of the pins
-boolean state[NUMBER_OF_PINS] = {false, false, false}; // remember of correct pins. if all are true relais will switch on.
+boolean state[NUMBER_OF_PINS]; // remember of correct pins. If all are true -> relay will switch on.
 const int outputPin = 3;
 const int relayTime = 1000; // ms
 
@@ -9,6 +10,7 @@ void setup() {
   for ( int i = 0; i < NUMBER_OF_PINS; i++ ) {
     pinMode(buttonOrder[i], INPUT_PULLUP);
   }
+  clear();
   pinMode(outputPin, OUTPUT);
   Serial.println("Setup complete");
 }
